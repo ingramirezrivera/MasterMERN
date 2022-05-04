@@ -1,16 +1,19 @@
 
 import './App.css';
+import { EventosComponente } from './components/EventosComponente';
 import MiComponente from './components/MiComponente';
 import { SegundoComponente } from './components/SegundoComponente';
 import { TercerComponente } from './components/TercerComponente';
 
 function App() {
-
+  const nombre = 'Daniel';
+  const apellidos = 'Ramirez Rivera'
   const fichaMedica = {
     eps: 'sura',
     altura: '187',
     peso: '87',
     rh: 'A+'
+    
   }
 
   return (
@@ -21,15 +24,17 @@ function App() {
           Bienvenidos al Master en React
         </h1>
         <hr/>
+        <EventosComponente />
         <MiComponente />
         <hr/>
         <SegundoComponente />
         <hr/>
         <TercerComponente 
-          nombre='Daniel' 
-          apellidos='Ramirez'
+          // nombre={nombre}
+          // apellidos={apellidos}
           fichaMedica={fichaMedica}
         />
+
         
       </header>
       
