@@ -39,7 +39,9 @@ function App() {
     {/* LATERAL */}
     <aside className="aside">
         {/* AQUI VA EL BUSCADOR */}
-        <Buscador />
+        <Buscador 
+            listState={listState} 
+            setListState={setListState}/>
         <CrearPeli 
             setListState={setListState}/>
     </aside>
